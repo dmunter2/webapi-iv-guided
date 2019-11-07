@@ -18,7 +18,7 @@ server.get('/', (req, res) => {
     res.status(500).json({ error: 'Cannot retrieve the shoutouts' });
   });
 });
-
+//init
 server.post('/', (req, res) => {
   Shoutouts.add(req.body)
   .then(shoutout => {
